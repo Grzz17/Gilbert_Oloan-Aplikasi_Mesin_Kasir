@@ -1,0 +1,11 @@
+Read and Write "namaitem" with string
+Read and Write "jumlahitem" with number
+Read and Write "hargaitem" with number
+
+IF "jumlahitem" more than or equal 2
+    STORE "diskon" with CALCULATE "hargaitem" multiply by 0.20
+    STORE "hargaitem" with CALCULATE "hargaitem" subtract "diskon"
+END IF
+
+STORE "total" with CALCULATE "hargaitem" multiply by "jumlahitem"
+PRINT "total"
